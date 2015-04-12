@@ -1,0 +1,6 @@
+---
+local_memory_bank_number: 32
+local_memory_bank_width: 4
+cache_line_size: 128
+warp_size: 32
+...

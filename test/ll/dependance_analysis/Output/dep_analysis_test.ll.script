@@ -1,0 +1,1 @@
+set -o pipefail;{ opt /home/hari/src/SymEngine/test/ll/dependance_analysis/dep_analysis_test.ll -load /home/hari/build/SymEngine/lib/libSymEngine.so -dependence-analysis; }

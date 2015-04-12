@@ -1,0 +1,34 @@
+---
+- kernelName: mm
+  args:       [1024, 1024]
+- kernelName: mt
+  args:       [1024, 1024]
+- kernelName: mtLocal
+  args:       [1024, 1024]
+- kernelName: sgemm
+  args:       [1024, 1024, 1024, 1024]
+- kernelName: Convolution2D_kernel 
+  args:       [2048, 2048]
+- kernelName: mm2_kernel1  
+  args:       [8192, 8192, 8192]
+- kernelName: Convolution3D_kernel 
+  args:       [4096, 4096, 4096, 1]
+- kernelName: atax_kernel1 
+  args:       [131072, 64]
+- kernelName: atax_kernel1_v1 
+  args:       [131072, 64]
+- kernelName: atax_kernel1_v2 
+  args:       [131072, 64]
+- kernelName: atax_kernel1_no_branch 
+  args:       [131072, 64]
+- kernelName: atax_kernel2 
+  args:       [131072, 64]
+- kernelName: ComputeQ_GPU
+  args:       [3072, 0]
+- kernelName: test
+  args:       [8192]
+- kernelName: reduce_kernel
+  args:       [2048, 2048]
+- kernelName: reduce
+  args:       []
+...

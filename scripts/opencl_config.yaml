@@ -1,0 +1,14 @@
+---
+ndRange: 
+  localSize: [32, 32, 1 ]
+  numberOfGroups: [32, 32, 1 ]
+warp:
+  group: [0, 0, 0]
+  warpIndex: 1
+#ndRange: 
+#  localSize: [1024, 1, 1 ]
+#  numberOfGroups: [32, 1, 1 ]
+#warp:
+#  group: [0, 0, 0]
+#  warpIndex: 1
+...

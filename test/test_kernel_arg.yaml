@@ -1,0 +1,8 @@
+---
+- kernelName: testKernel0
+  args:       []
+- kernelName: testKernel1
+  args:       [123]
+- kernelName: testKernel2
+  args:       [321, 654]
+...
