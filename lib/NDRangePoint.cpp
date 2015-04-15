@@ -12,17 +12,13 @@ NDRangePoint::NDRangePoint() {
 }
 
 NDRangePoint::NDRangePoint(int localX, int localY, int localZ, int groupX,
-                           int groupY, int groupZ, const NDRangeSpace *ndRangeSpace) {
-
-  int tmpLocal[] = { localX, localY, localZ };
-  int tmpGroup[] = { groupX, groupY, groupZ };
-  int tmpGlobal[] = { localX + groupX * ndRangeSpace->getLocalSizeX(),
-                      localY + groupY * ndRangeSpace->getLocalSizeY(),
-                      localZ + groupZ * ndRangeSpace->getLocalSizeZ() };
-
-  local.assign(tmpLocal, tmpLocal + NDRange::DIRECTION_NUMBER);
-  group.assign(tmpGroup, tmpGroup + NDRange::DIRECTION_NUMBER);
-  global.assign(tmpGlobal, tmpGlobal + NDRange::DIRECTION_NUMBER);
+                           int groupY, int groupZ,
+                           const NDRangeSpace *ndRangeSpace) {
+  local = {localX, localY, localZ};
+  group = {groupX, groupY, groupZ};
+  global = {localX + groupX * ndRangeSpace->getLocalSizeX(),
+            localY + groupY * ndRangeSpace->getLocalSizeY(),
+            localZ + groupZ * ndRangeSpace->getLocalSizeZ()};
 }
 
 int NDRangePoint::getLocalX() const { return local[0]; }
